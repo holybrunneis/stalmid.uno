@@ -1,0 +1,53 @@
+body {
+    font-family: 'Courier New', sans-serif;
+}
+html {
+    background-color: #04BA9F;
+}
+h1 {
+    font-size: 4em;
+}
+#home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+#about {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#home > img {
+    max-width: 22vw;
+}
+#home nav {
+    font-size: large;
+}
+.blink {
+    animation-duration: 1s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(2, start);
+}
+@keyframes blink {
+    75% {
+        visibility: hidden;
+    }
+}
+div {
+    border: 0.5rem outset #ADDDFF;
+    border-radius: 12px;
+    font: bold 1rem 'courier new', sans-serif;
+    margin: 1rem;
+    padding: 1rem;
+    outline-offset: 0.5rem;
+    font-size: large;
+  }
