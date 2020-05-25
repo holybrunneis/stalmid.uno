@@ -1,5 +1,7 @@
 <nav>
-    home &middot;
-    <a href="about.html">about</a> &middot;
-    updates
+  <a href="{{ .Site.BaseURL }}" {{ if .IsHome }}class="here"{{end}}>home</a> &middot;
+  <a href="{{ .Site.BaseURL }}/about/" {{ if (eq .RelPermalink "/about/") }}class="here"{{end}}>about</a> &middot;
+  <a href="{{ .Site.BaseURL }}/updates/" {{ if (eq .RelPermalink "/updates/") }}class="here"{{end}}>updates</a>
+  {{- if not .IsHome }} &middot;
+  <a href="{{ .Site.Params.discord }}">join</a>{{end}}
 </nav>

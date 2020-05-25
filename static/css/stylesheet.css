@@ -1,35 +1,56 @@
 body {
     font-family: 'Courier New', sans-serif;
+    font-weight: bold;
+    margin: 0;
 }
 html {
     background-color: #04BA9F;
 }
+a {
+    color: blue;
+}
+p {
+    margin: auto 0px;
+}
 h1 {
-    font-size: 4em;
-}
-#home {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-}
-#about {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-	align-items: center;
-    justify-content: center;
+    font-size: 2.5em;
     text-align: center;
 }
-#home > img {
-    max-width: 22vw;
+img {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
 }
-#home nav {
-    font-size: large;
+.here {
+    text-decoration: none;
+    color: black;
+}
+nav {
+    padding: 15px;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+#main, #home {
+    overflow: hidden;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    max-width: 850px;
+    min-height: 100vh;
+}
+article {
+    padding: 8px;
+}
+article > header {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#home {
+    justify-content: center;
+    flex: auto;
+    display: flex;
 }
 .blink {
     animation-duration: 1s;
@@ -42,12 +63,40 @@ h1 {
         visibility: hidden;
     }
 }
-div {
+.colorbar {
+    display: block;
+    padding: 20px;
+}
+.prettybox {
+    width: 700px;
+    text-align: center;
     border: 0.5rem outset #ADDDFF;
     border-radius: 12px;
     font: bold 1rem 'courier new', sans-serif;
-    margin: 1rem;
+    margin: 1rem auto;
     padding: 1rem;
     outline-offset: 0.5rem;
     font-size: large;
-  }
+}
+@media (max-width: 800px) {
+    img {
+        max-width: 100vw;
+    }
+    .prettybox {
+        max-width: 85vw;
+    }
+}
+.post-list h3 {
+    display: inline-block;
+}
+/* @media (max-width: 640px) { */
+/*     .prettybox { */
+/*         max-width: 100vw; */
+/*     } */
+/*     #home, #main { */
+/*         max-width: 100vw; */
+/*     } */
+/*     #main article { */
+/*         max-width: 100vw; */
+/*     } */
+/* } */

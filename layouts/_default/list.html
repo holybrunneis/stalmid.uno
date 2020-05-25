@@ -1,0 +1,15 @@
+{{ partial "header.html" .}}
+<h1>{{ .Title }}</h1>
+<img src="{{.Site.BaseURL}}/img/colorbar.gif" alt="colorbar">
+<div class="post-list">
+{{ range .Paginator.Pages }}
+<article>
+  <time>{{ .Date.Format "2006-01-02" }}</time>
+  <h3>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </h3>
+</article>
+{{ end }}
+</div>
+{{ partial "pagination.html" . }}
+{{ partial "footer.html" .}}
