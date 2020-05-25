@@ -1,5 +1,6 @@
 +++
 title = "about the men behind stal.mid"
+urlshit = "stal.about"
 +++
 ![donovan](/img/about/donovan.png)
 {{% prettybox %}}
