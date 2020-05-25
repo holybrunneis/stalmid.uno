@@ -1,6 +1,6 @@
 {{ partial "header.html" .}}
 <h1>{{ .Title }}</h1>
-<img src="{{.Site.BaseURL}}/img/colorbar.gif" alt="colorbar">
+<img class="colorbar" src="{{.Site.BaseURL}}/img/colorbar.gif" alt="colorbar">
 <div class="post-list">
 {{ range .Paginator.Pages }}
 <article>

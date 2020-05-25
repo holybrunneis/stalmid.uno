@@ -65,7 +65,7 @@ article > header {
 }
 .colorbar {
     display: block;
-    padding: 20px;
+    padding-bottom: 30px;
 }
 .prettybox {
     width: 700px;
