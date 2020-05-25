@@ -13,5 +13,4 @@ We're setting up other pages on the site for plenty of things to view, and I hav
 
 We hope you have a nice visit at our site, and stay tuned for more updates in the future.
 
-
-<nbsp><nbsp>-*donovan*
+-*donovan*
